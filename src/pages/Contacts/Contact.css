@@ -1,0 +1,530 @@
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts input {
+  /* width: 100%; */
+  width: 280px !important;
+}
+
+.add-contact-button {
+  padding: 8px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.table-info {
+  height: 71vh;
+  overflow: auto;
+}
+
+.table-container {
+  margin-top: 16px;
+}
+
+.table-container .collapsed-width {
+  width: 92.6vw;
+}
+
+.table-container .width {
+  width: 83.3vw;
+}
+
+.table-container .tab-collapsed-width {
+  width: 90vw;
+}
+
+.table-container .tab-width {
+  width: 80vw;
+}
+
+.contact-table {
+  width: 100%;
+  padding: 16px;
+  overflow-x: auto;
+  position: relative;
+}
+
+.contact-table tr {
+  border-bottom: 1px solid #edf0eb;
+}
+
+.contact-table th {
+  background-color: #d1dbcf;
+}
+
+.contact-table td {
+  background-color: #ffffff;
+}
+
+/* .contact-table .sticky-data,
+th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+} */
+
+.contact-table thead {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+.contact-table th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.contact-table td:nth-child(1) {
+  padding-right: 24px;
+}
+
+.contact-table tr td:nth-child(1),
+tr th:nth-child(1) {
+  position: sticky;
+  left: 0;
+  padding: 12px 22px;
+  /* background-color: #ffffff; */
+}
+
+.contact-table tr td:nth-child(1) {
+  z-index: 1;
+}
+
+.two-rows-static tr th:nth-child(2) {
+  position: sticky;
+  left: 40px;
+  padding: 12px 22px;
+  /* background-color: #ffffff; */
+}
+
+.two-rows-static tr td:nth-child(2) {
+  position: sticky;
+  left: 40px;
+  padding: 12px 22px;
+  /* background-color: #ffffff; */
+}
+
+.contact-table .table-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-table .tags {
+  border: 1px solid #2d5b30;
+  padding: 5px 13px;
+  border-radius: 50px;
+  width: fit-content;
+  text-transform: capitalize;
+}
+
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container p {
+  padding-left: 35px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 1px;
+  border: 2px solid #edf0eb;
+  background-color: #ffffff;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  /* background-color: #2d5b30; */
+  border: 2px solid #6f6f6f;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4.7px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #6f6f6f;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input {
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 0px 20px 0px #007d880d;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #fff;
+}
+
+input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background-color: #fff;
+}
+
+textarea {
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 0px 20px 0px #007d880d;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #fff;
+}
+
+textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.Dropdown-root {
+  width: 100% !important;
+}
+
+.company-select .Dropdown-control {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 0px 20px 0px #007d880d;
+  /* margin-top: 5px; */
+  border-radius: 8px;
+  width: 100%;
+}
+
+.phone-select .Dropdown-control {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 0px 20px 0px #007d880d;
+  margin-top: 5px;
+  border-radius: 8px 0px 0px 8px;
+  width: 100%;
+  background-color: #f4f4f4;
+  color: #6f6f6f;
+  height: 40px;
+  padding: 5px 25px 5px 10px;
+}
+
+.save-button {
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+.save-button:disabled {
+  opacity: 0.5;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background: url("../../assets/svgs/radio-white.svg");
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+  background: url("../../assets/svgs/radio-checked.svg");
+}
+
+.contact-details {
+  margin-top: 16px;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.container .tags {
+  border: 1px solid #2d5b30;
+  padding: 4px 13px;
+  border-radius: 50px;
+  width: fit-content;
+  margin-left: 35px;
+  text-transform: capitalize;
+}
+
+.tags {
+  border: 1px solid #2d5b30;
+  padding: 4px 12px;
+  border-radius: 50px;
+  width: fit-content;
+  text-transform: capitalize;
+}
+
+.contact-details .tag-data {
+  border: 1px solid #2d5b30;
+  padding: 4px 8px;
+  border-radius: 50px;
+  width: fit-content;
+  text-transform: capitalize;
+}
+
+.contact-details .header-tabs {
+  padding-bottom: 8px;
+}
+
+.contact-details .header-tabs .tab {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d1dbcf;
+  width: 100%;
+  text-align: center !important;
+}
+
+.contact-details .header-tabs .active {
+  border-bottom: 2px solid #2d5b30;
+}
+
+.updates-message {
+  box-shadow: 0px 0px 20px 0px #0000000d;
+  border: 1px solid #f4f4f4;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #f4f4f4;
+}
+
+.updates-date-info {
+  border-left: 1px solid #d9d9d9;
+}
+
+.updates-date-info .date {
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.priority {
+  border: 1px solid #6f6f6f;
+  padding: 6px 12px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.due-date {
+  padding: 6px 12px;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.dropdown-content {
+  /* box-shadow: 0px 0px 20px 0px #0000000d; */
+  padding: 16px;
+  border-radius: 8px;
+  /* width: fit-content; */
+}
+
+.select-header-input {
+  /* width: 208px; */
+  height: 41px;
+  border-radius: 8px;
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 0px 20px 0px #007d880d;
+  padding: 12px;
+}
+
+.filter-select {
+  /* width: 140; */
+  height: 40px;
+  border: 1px solid #f4f4f4;
+}
+
+.smart-plan-card {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 0px 20px 0px #0000000d;
+  border-radius: 4px;
+  padding: 17px;
+}
+
+.link-contact-list {
+  border: 1px solid #d1dbcf;
+  height: 150px;
+  padding: 8px 12px;
+  overflow-y: auto;
+}
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .table-container .collapsed-width {
+    width: 93vw;
+  }
+
+  .table-container .width {
+    width: 82.6vw;
+  }
+
+  .table-info {
+    height: 68vh;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .table-container .collapsed-width {
+    width: 92vw;
+  }
+
+  .table-container .width {
+    width: 80.4vw;
+  }
+
+  .table-info {
+    height: 65.4vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .table-container .collapsed-width {
+    width: 94vw;
+  }
+
+  .table-container .width {
+    width: 79vw;
+  }
+
+  .contacts input {
+    width: 200px !important;
+  }
+
+  .contact-table {
+    padding: 14px;
+  }
+
+  .contact-table th,
+  td {
+    padding: 10px;
+  }
+
+  .two-rows-static tr th:nth-child(2),
+  tr td:nth-child(2) {
+    left: 30px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .table-container .collapsed-width {
+    width: 94vw;
+  }
+
+  .table-container .width {
+    width: 91vw;
+  }
+
+  .contact-header {
+    display: block;
+    gap: 5;
+  }
+
+  .contacts input {
+    width: 120px !important;
+  }
+
+  .contact-table th,
+  td {
+    padding: 10px;
+  }
+  .two-rows-static tr th:nth-child(2),
+  tr td:nth-child(2) {
+    left: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 659px) {
+  .body-L {
+    flex-wrap: wrap;
+  }
+
+  .head-5 {
+    flex-wrap: wrap;
+  }
+
+  .two-rows-static tr td:nth-child(2) {
+    width: 120px !important;
+  }
+  .after\:top-\[2px\]::after {
+    top: -1.5px !important;
+  }
+  .toggle-container::after {
+    height: 15px !important;
+    width: 15px !important;
+  }
+  .toggle-container {
+    height: 16px !important;
+    width: 35px !important;
+  }
+  .contacts input {
+    width: 200px !important;
+  }
+
+  .dashboard {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .head-4 {
+    font-size: 13px !important;
+  }
+  .table-container .width {
+    width: 100% !important;
+  }
+  .contact-header {
+    display: block;
+    gap: 5;
+  }
+
+  .contact-table th,
+  td {
+    padding: 10px;
+  }
+
+  .two-rows-static tr th:nth-child(2),
+  tr td:nth-child(2) {
+    left: 30px;
+  }
+}

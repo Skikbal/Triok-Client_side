@@ -1,0 +1,52 @@
+.license-select .Dropdown-control {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 0px 20px 0px #007d880d;
+  margin-top: 5px;
+  border-radius: 0px 8px 8px 0px;
+  width: auto;
+  background-color: #f4f4f4;
+  color: #6f6f6f;
+  min-height: 41px;
+}
+
+.service-area .css-1p3m7a8-multiValue {
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: #2d5b30;
+  border: 1px solid #2d5b30;
+  padding: 0px 3px;
+}
+
+.service-area .css-wsp0cs-MultiValueGeneric {
+  color: #2d5b30;
+}
+
+.service-area .css-12a83d4-MultiValueRemove:hover {
+  background-color: #ffffff;
+  color: #2d5b30;
+}
+
+.service-area .css-t3ipsp-control .css-t3ipsp-control:hover {
+  border-color: none;
+}
+
+.specialties .css-t3ipsp-control .css-t3ipsp-control:hover {
+  border-color: none;
+}
+
+.specialties .css-1p3m7a8-multiValue {
+  background-color: #2d5b30;
+  border-radius: 50px;
+  color: #ffffff !important;
+  border: 1px solid #2d5b30;
+  padding: 1px 6px;
+}
+
+.specialties .css-wsp0cs-MultiValueGeneric {
+  color: #ffffff !important;
+}
+
+.specialties .css-12a83d4-MultiValueRemove:hover {
+  background-color: #2d5b30 !important;
+  color: #ffffff !important;
+}

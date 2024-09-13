@@ -1,0 +1,43 @@
+.lease-info-card {
+  border: 1px solid #f4f4f4;
+  padding: 16px 20px;
+  text-align: center;
+  width: 272px;
+}
+
+.lease-info-card img {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.property-history-info {
+  border-left: 1px solid #6f6f6f;
+}
+
+.property-history-info .card-info {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .lease-info-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .lease-info-card {
+    width: 100%;
+  }
+}
+/* Styles to increase the size of the date input calendar */
+.large-date-input {
+  font-size: 18px; 
+  padding: 10px;
+  width: 100%; 
+}
+
+.large-date-input::-webkit-calendar-picker-indicator {
+  font-size: 18px;
+}
+
