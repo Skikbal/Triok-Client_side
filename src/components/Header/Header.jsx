@@ -13,7 +13,14 @@ import Setting from "../../assets/svgs/Setting.svg";
 import Arrow from "../../assets/svgs/angle down.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { handleDropdownClose } from "../../utils/utils";
-import { setConnectedAppData, setIsShowSettingSidebar, setIsSidebarCollapsed, setToken, setUserData, setUserType } from "../../redux/Action/AuthActions";
+import {
+  setConnectedAppData,
+  setIsShowSettingSidebar,
+  setIsSidebarCollapsed,
+  setToken,
+  setUserData,
+  setUserType,
+} from "../../redux/Action/AuthActions";
 
 const options = [
   { name: "My Profile", icon: Profile, link: "/settings/profile" },
@@ -31,7 +38,8 @@ const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const userType = useSelector((state) => state.userType);
   const userDetails = useSelector((state) => state.userDetails);
-  const dropdownOptions = userType === 3 ? options?.filter((el) => el.name !== "Settings") : options;
+  const dropdownOptions =
+    userType === 3 ? options?.filter((el) => el.name !== "Settings") : options;
 
   const fetchProfile = () => {
     axios
@@ -40,7 +48,10 @@ const Header = () => {
         setUserProfileData(res?.data?.data);
       })
       .catch((err) => {
-        if (err.response?.data?.message && err.response?.data?.message !== "Too Many Attempts.") {
+        if (
+          err.response?.data?.message &&
+          err.response?.data?.message !== "Too Many Attempts."
+        ) {
           NotificationManager.error(err.response?.data?.message);
         }
       });
@@ -82,14 +93,24 @@ const Header = () => {
           {/* <button className="body-S green-H  mr-5 tags mt-[5px]" onClick={() => setShowModal(true)}>
             All Note
           </button> */}
-          <img src={userDetails?.profile_photo ? userDetails?.profile_photo : avatar} alt="user" className="user-image rounded-full " />
+          <img
+            src={
+              userDetails?.profile_photo ? userDetails?.profile_photo : avatar
+            }
+            alt="user"
+            className="user-image rounded-full "
+          />
 
           <div ref={sidebarRef} className="custom-dropdown">
             <div className="dropdown-header" onClick={() => setIsOpen(!isOpen)}>
               <p className="head-5 dark-H capitalize">
                 {userDetails?.first_name} {userDetails?.last_name}
               </p>
-              <img src={Arrow} alt="Dropdown Arrow" className="dropdown-arrow" />
+              <img
+                src={Arrow}
+                alt="Dropdown Arrow"
+                className="dropdown-arrow"
+              />
             </div>
 
             {isOpen && (
@@ -99,7 +120,15 @@ const Header = () => {
               >
                 <ul className="dropdown-list">
                   <li className="profile-image" onClick={() => navigate("/")}>
-                    <img src={userDetails?.profile_photo ? userDetails?.profile_photo : avatar} alt="icon" className="rounded-full h-[50px] w-[50px]" />
+                    <img
+                      src={
+                        userDetails?.profile_photo
+                          ? userDetails?.profile_photo
+                          : avatar
+                      }
+                      alt="icon"
+                      className="rounded-full h-[50px] w-[50px]"
+                    />
                     <p className="mt-2 head-4 light-L capitalize">
                       {userDetails?.first_name} {userDetails?.last_name}
                     </p>
@@ -137,7 +166,8 @@ const Header = () => {
                       }}
                       className="hover:bg-none"
                     >
-                      <img src={option.icon} alt="icon" /> <p className="ml-2 body-L light-L">{option.name}</p>
+                      <img src={option.icon} alt="icon" />{" "}
+                      <p className="ml-2 body-L light-L">{option.name}</p>
                     </li>
                   ))}
                 </ul>

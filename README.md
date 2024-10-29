@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://stage-fe.tri-oakcrm.com/properties
+Staging: https://stage-fe.tri-oakcrm.com/properties
+
+Super admin
+mailto:trioaksuperadmin@yopmail.com
+12345678
+
+admin
+mailto:tri.oakcrm.com@gmail.com
+CRM@oak123
+
+sales
+mailto:nikhil-trioak@yopmail.com
+Nikhil@123
+
+Live: https://app.tri-oakcrm.com/login
+
+super-admin
+mailto:tri.oakcrm.com@gmail.com
+CRM@oak123
